@@ -1,0 +1,49 @@
+:root {
+  --bg: #f4f4f0; --ink: #000; --accent: #ff5a1f;
+  --shadow: 8px 8px 0 0 #000;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: 'Courier New', monospace;
+}
+.brutalist-nav {
+  display: flex; flex-wrap: wrap; gap: 0; background: #fff;
+  border-bottom: 4px solid var(--ink); padding: 0; position: sticky; top: 0; z-index: 10;
+}
+.brutalist-brand {
+  padding: 1rem 1.5rem; font-weight: 800; letter-spacing: 2px;
+  text-decoration: none; color: var(--ink); border-right: 4px solid var(--ink);
+  background: var(--accent); color: #fff;
+}
+.brutalist-navlink {
+  padding: 1rem 1rem; text-decoration: none; color: var(--ink);
+  font-weight: 700; font-size: 0.8rem; border-right: 2px solid var(--ink);
+}
+.brutalist-navlink:hover { background: var(--accent); color: #fff; }
+.brutalist-main { padding: 2rem; display: flex; justify-content: center; }
+.brutalist-card {
+  background: #fff; border: 4px solid var(--ink);
+  box-shadow: var(--shadow); padding: 2.5rem; width: 100%; max-width: 480px;
+}
+.brutalist-title {
+  font-size: 1.6rem; margin: 0 0 1rem; letter-spacing: 2px; text-transform: uppercase;
+}
+.brutalist-form { display: flex; flex-direction: column; gap: 0.6rem; }
+.brutalist-label { font-weight: 700; font-size: 0.75rem; letter-spacing: 1px; }
+.brutalist-input {
+  border: 3px solid var(--ink); padding: 0.7rem;
+  font-family: inherit; font-size: 1rem; background: var(--bg);
+}
+.brutalist-input:focus { outline: none; background: var(--accent); color: #fff; }
+.brutalist-btn {
+  margin-top: 1rem; border: 3px solid var(--ink); background: var(--ink);
+  color: #fff; padding: 0.8rem; font-weight: 700; letter-spacing: 2px;
+  cursor: pointer; box-shadow: 4px 4px 0 0 var(--accent); font-family: inherit;
+}
+.brutalist-btn:active { transform: translate(4px, 4px); box-shadow: 0 0 0 0 var(--accent); }
+.brutalist-alert {
+  border: 3px solid var(--ink); background: var(--accent); color: #fff;
+  padding: 0.5rem; font-weight: 700;
+}
+.brutalist-ok { border: 3px solid var(--ink); background: #b6f5b6; padding: 0.6rem; font-weight: 700; margin-top: 1rem; }
